@@ -1,18 +1,18 @@
-[] Days in brackets
-[] default date chooser for grads (in form of a button)
-[] better calender because default is shit
-[] Pretty Design
-[] days used should be drop down style for security
-[] forecast date should default to today
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
+- [] Days in brackets
+- [] default date chooser for grads (in form of a button)
+- [] better calender because default is shit
+- [] Pretty Design
+- [] days used should be drop down style for security
+- [] forecast date should default to today
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
+- [] 
