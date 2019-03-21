@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/leavebalance/precache-manifest.843a79407538109188115505e471c8f7.js"
+  "/leavebalance/precache-manifest.ede9c3c4e491b992fa3ed441c80ba95e.js"
 );
 
 workbox.clientsClaim();
