@@ -31,6 +31,7 @@ class InputForm extends Component {
         console.log(this.state);
 
         this.props.getUserInput(this.state.join, this.state.used, this.state.forecast);
+        this.props.showOutput();
     }
 
   render() {

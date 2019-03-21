@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 // Components
-import Container from './Components/Container';
+// Components
+import InputForm from './Components/InputForm';
+import Output from './Components/Output';
 
 const accrue = 5/12;
 const oneDay = 24*60*60*1000;
@@ -20,6 +22,8 @@ class App extends Component {
 
       leave: 0,
       balance: 0,
+
+      showOutput: false,
     }
   }
 
@@ -34,8 +38,11 @@ class App extends Component {
     let leaveBalance = difference1 * accrue - this.state.used * 7.5;
     let forecastBalance = difference2 * accrue + leaveBalance;
     
-    this.state.leave = leaveBalance;
-    this.state.balance = forecastBalance;
+    this.setState({leave: leaveBalance});
+    this.setState({balance: forecastBalance});
+
+    //console.log("+++LEAVES: " + this.state.leave);
+    //console.log("+++BALANCE: " + this.state.balance);
   }
 
   getUserInput(join, used, forecast){    
@@ -46,16 +53,36 @@ class App extends Component {
     this.calculate();
   }
 
+  showOutput(){
+    this.setState({showOutput: true});
+  }
+
   render() {
+
+    console.log("-----LEAVES: "+ this.state.leave);
+    console.log("-----BALANCE: "+ this.state.balance);
+
+    let output;
+    if(this.state.showOutput){
+        console.log("LEAVES: "+ this.state.leave);
+        console.log("BALANCE: "+ this.state.balance);
+        output = <Output
+        leave = {this.state.leave}
+        balance = {this.state.balance}
+        />
+    }
 
     return (
       <div className="App">
 
-        <Container
+        <InputForm
+        showOutput = {this.showOutput.bind(this)}
         getUserInput = {this.getUserInput.bind(this)}
-        leave = {this.state.leave}
-        balance = {this.state.balance}
         />
+
+        <br/>
+
+        {output}
 
       </div>
     );
