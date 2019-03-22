@@ -30,7 +30,7 @@ class Output extends Component {
                         {this.props.leave}
                     </td>
                     <td>
-                        0
+                        {(this.props.leave / 7.5).toFixed(2)}
                     </td>
                 </tr>
 
@@ -42,10 +42,10 @@ class Output extends Component {
                         {this.props.balance}
                     </td>
                     <td>
-                        0
+                        {(this.props.balance / 7.5).toFixed(2)}
                     </td>
                 </tr>
-                
+
             </tbody>
         </table>
       </div>

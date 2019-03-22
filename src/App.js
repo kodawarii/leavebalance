@@ -64,7 +64,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        
+        <header>
+          <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet"/>
+        </header>
+
         <InputForm
         showOutput = {this.showOutput.bind(this)}
         getUserInput = {this.getUserInput.bind(this)}
