@@ -1,4 +1,4 @@
-<Product BackLog>
+--Product BackLog--
 
 - [Done] Days in brackets
 - [] Default date chooser for grads (in form of a button)

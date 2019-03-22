@@ -55,7 +55,7 @@ class InputForm extends Component {
 
                 <li>
                     Leaves Used: <br/><br/>
-                    <input type="text" maxlength="3" placeholder="From 0 to 999" pattern="\d*" onChange={this.handleUsedChange.bind(this)} className="inputField"/>
+                    <input type="text" maxlength="3" placeholder="From 0 to 999 (Days)" pattern="\d*" onChange={this.handleUsedChange.bind(this)} className="inputField"/>
                 </li>
 
                 <li>

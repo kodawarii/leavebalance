@@ -46,7 +46,7 @@ input:focus::-webkit-input-placeholder {
     background-color: #282c34;
     border: 2px solid #bebebe;
     color: #ffffff;
-    padding: 8px 8px;
+    padding: 8px 14px 8px 14px;
     text-align: center;
     font-family: 'Gruppo', cursive;
     display: inline-block;
