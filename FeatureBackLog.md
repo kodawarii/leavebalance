@@ -1,10 +1,10 @@
 - [] Days in brackets
-- [] default date chooser for grads (in form of a button)
-- [] better calender because default is shit
-- [] Pretty Design
-- [] days used should be drop down style for security
-- [] forecast date should default to today
-- [] 
+- [] Default date chooser for grads (in form of a button)
+- [] Better calender because default is shit
+- [] ***** Pretty Design for execellent User Experience - Top and Bottom Component - Horizontal Design
+- [] Days used should be drop down style for security (mobile scroller style)
+- [] Forecast date should default to today
+- [] Include a Key for forced leaves
 - [] 
 - [] 
 - [] 

@@ -37,6 +37,9 @@ class App extends Component {
 
     let leaveBalance = difference1 * accrue - this.state.used * 7.5;
     let forecastBalance = difference2 * accrue + leaveBalance;
+
+    leaveBalance = leaveBalance.toFixed(2);
+    forecastBalance = forecastBalance.toFixed(2);
     
     this.setState({leave: leaveBalance});
     this.setState({balance: forecastBalance});
@@ -59,22 +62,9 @@ class App extends Component {
 
   render() {
 
-    console.log("-----LEAVES: "+ this.state.leave);
-    console.log("-----BALANCE: "+ this.state.balance);
-
-    let output;
-    if(this.state.showOutput){
-        console.log("LEAVES: "+ this.state.leave);
-        console.log("BALANCE: "+ this.state.balance);
-        output = <Output
-        leave = {this.state.leave}
-        balance = {this.state.balance}
-        />
-    }
-
     return (
       <div className="App">
-
+        
         <InputForm
         showOutput = {this.showOutput.bind(this)}
         getUserInput = {this.getUserInput.bind(this)}
@@ -82,7 +72,10 @@ class App extends Component {
 
         <br/>
 
-        {output}
+        <Output
+        leave = {this.state.leave}
+        balance = {this.state.balance}
+        />
 
       </div>
     );

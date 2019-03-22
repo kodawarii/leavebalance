@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// Stylesheets
+import './Style_InputForm.css'
+
 class InputForm extends Component {
 
     constructor(){
@@ -36,19 +39,27 @@ class InputForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="inputform">
           <form onSubmit={this.handleSubmit.bind(this)}>
-            <p>Enter Join Date:</p>
-            <input type="date" onChange={this.handleJoinChange.bind(this)} />
+            <ul>
+                <li>
+                    Enter Join Date: <br/>
+                    <input type="date" onChange={this.handleJoinChange.bind(this)} />
+                </li>
 
-            <p>Enter Leaves Used:</p>
-            <input type="text" ref="" onChange={this.handleUsedChange.bind(this)} />
+                <li>
+                    Enter Leaves Used: <br/>
+                    <input type="text" ref="" onChange={this.handleUsedChange.bind(this)} />
+                </li>
 
-            <p>Enter Forecast Date:</p> 
-            <input type="date" ref="" onChange={this.handleForecastChange.bind(this)} />
+                <li>
+                    Enter Forecast Date: <br/>
+                    <input type="date" ref="" onChange={this.handleForecastChange.bind(this)} />
+                </li>
+            </ul>
+            
+            <input id="submitButton" type="submit" value="Calculate Forecast" className="submitButton" />
 
-            <br/><br/>
-            <input id="submitButton" type="submit" value="Calculate Forecast" className="submitButton" />         
           </form>
       </div>
     );
