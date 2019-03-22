@@ -17,6 +17,15 @@ li{
     color: white;
 }
 
+.inputField::placeholder{
+    color: rgb(179, 179, 179);
+}
+
+/* Hide the Placeholder text when focused */
+input:focus::-webkit-input-placeholder { 
+    color: transparent; 
+}
+
 .inputField:hover{
     background-color: #282c34;
     border: 1px solid #42c3ff;

@@ -38,23 +38,29 @@ class InputForm extends Component {
     }
 
   render() {
+
+    /* Getting Today's date to default into forecast input field */
+    var curr = new Date();
+    curr.setDate(curr.getDate());
+    var date = curr.toISOString().substr(0,10);
+
     return (
       <div className="inputform">
           <form onSubmit={this.handleSubmit.bind(this)}>
             <ul>
                 <li>
-                    Enter Join Date: <br/><br/>
+                    Join Date: <br/><br/>
                     <input type="date" onChange={this.handleJoinChange.bind(this)} className="inputField"/>
                 </li>
 
                 <li>
-                    Enter Leaves Used: <br/><br/>
-                    <input type="text" ref="" onChange={this.handleUsedChange.bind(this)} className="inputField"/>
+                    Leaves Used: <br/><br/>
+                    <input type="text" maxlength="3" placeholder="From 0 to 999" pattern="\d*" onChange={this.handleUsedChange.bind(this)} className="inputField"/>
                 </li>
 
                 <li>
-                    Enter Forecast Date: <br/><br/>
-                    <input type="date" ref="" onChange={this.handleForecastChange.bind(this)} className="inputField"/>
+                    Forecast Date: <br/><br/>
+                    <input type="date" onChange={this.handleForecastChange.bind(this)} defaultValue={date} className="inputField"/>
                 </li>
             </ul>
             
