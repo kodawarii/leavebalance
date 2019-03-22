@@ -44,14 +44,19 @@ class App extends Component {
     this.setState({leave: leaveBalance});
     this.setState({balance: forecastBalance});
 
-    //console.log("+++LEAVES: " + this.state.leave);
-    //console.log("+++BALANCE: " + this.state.balance);
+    console.log("+++LEAVES: " + this.state.leave);
+    console.log("+++BALANCE: " + this.state.balance);
   }
 
-  getUserInput(join, used, forecast){    
+  getUserInput(join, used, forecast, isToday){    
+    if(isToday){
+      this.state.forecast = forecast;
+    }
+    else{
+      this.state.forecast = new Date(forecast);
+    }
     this.state.join = new Date(join);
     this.state.used = used;
-    this.state.forecast = new Date(forecast);
 
     this.calculate();
   }

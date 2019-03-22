@@ -12,6 +12,8 @@ class InputForm extends Component {
             join: 0,
             used: 0,
             forecast: 0,
+
+            isToday: true,
         }
     }
 
@@ -24,6 +26,7 @@ class InputForm extends Component {
     }
 
     handleForecastChange(e){
+        this.state.isToday = false;
         this.state.forecast = e.target.value;
     }
 
@@ -33,8 +36,15 @@ class InputForm extends Component {
         console.log("Fuck this shit");
         console.log(this.state);
 
-        this.props.getUserInput(this.state.join, this.state.used, this.state.forecast);
-        this.props.showOutput();
+        if(this.state.isToday){
+            let today = new Date();
+            this.props.getUserInput(this.state.join, this.state.used, today, true);
+            this.props.showOutput();
+        }
+        else{
+            this.props.getUserInput(this.state.join, this.state.used, this.state.forecast, false);
+            this.props.showOutput();
+        }
     }
 
   render() {
