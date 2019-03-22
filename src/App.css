@@ -11,3 +11,8 @@
   text-align: center;
   font-family: 'Gruppo', cursive;
 }
+
+footer{
+  font-size: 0.8em;
+  text-shadow: 2px 3px 4px #a8e6ff;
+}

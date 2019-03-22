@@ -66,7 +66,10 @@ class App extends Component {
       <div className="App">
         <header>
           <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet"/>
+          <b> eHR Annual Leaves Forecaster </b>
         </header>
+
+        <br/><br/>
 
         <InputForm
         showOutput = {this.showOutput.bind(this)}
@@ -74,11 +77,18 @@ class App extends Component {
         />
 
         <br/>
+        <br/>
 
         <Output
         leave = {this.state.leave}
         balance = {this.state.balance}
         />
+
+        <br/>
+
+        <footer>
+          Note: 2018 Forced Leaves was 6 days
+        </footer>
 
       </div>
     );

@@ -43,18 +43,18 @@ class InputForm extends Component {
           <form onSubmit={this.handleSubmit.bind(this)}>
             <ul>
                 <li>
-                    Enter Join Date: <br/>
-                    <input type="date" onChange={this.handleJoinChange.bind(this)} />
+                    Enter Join Date: <br/><br/>
+                    <input type="date" onChange={this.handleJoinChange.bind(this)} className="inputField"/>
                 </li>
 
                 <li>
-                    Enter Leaves Used: <br/>
-                    <input type="text" ref="" onChange={this.handleUsedChange.bind(this)} />
+                    Enter Leaves Used: <br/><br/>
+                    <input type="text" ref="" onChange={this.handleUsedChange.bind(this)} className="inputField"/>
                 </li>
 
                 <li>
-                    Enter Forecast Date: <br/>
-                    <input type="date" ref="" onChange={this.handleForecastChange.bind(this)} />
+                    Enter Forecast Date: <br/><br/>
+                    <input type="date" ref="" onChange={this.handleForecastChange.bind(this)} className="inputField"/>
                 </li>
             </ul>
             

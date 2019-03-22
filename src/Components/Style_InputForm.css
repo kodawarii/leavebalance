@@ -4,8 +4,33 @@ ul{
 
 li{
     float:left; 
+    padding-left: 20px;
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.inputField{
+    background-color: #282c34;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: white;
+}
+
+.inputField:hover{
+    background-color: #282c34;
+    border: 1px solid #42c3ff;
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: rgb(78, 255, 187);
+}
+
+.inputField:focus{
+    border-color: rgb(106, 109, 255);
+    box-shadow: 0 0 12px #8cd1ff;
+    border-radius: 30px;
+    padding: 12px 20px;
+    outline: none;
 }
 
 .submitButton{
@@ -18,4 +43,10 @@ li{
     display: inline-block;
     font-size: 16px;
     border-radius: 20px;
+}
+
+.submitButton:hover {
+    border-color: rgb(111, 255, 106);
+    box-shadow: 0 0 12px #baff8c;
+    color: rgb(117, 255, 117);
 }
