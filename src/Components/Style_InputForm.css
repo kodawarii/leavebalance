@@ -11,7 +11,7 @@ li{
 
 .inputField{
     background-color: #282c34;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 30px;
     padding: 12px 20px;
     color: white;
@@ -28,7 +28,8 @@ input:focus::-webkit-input-placeholder {
 
 .inputField:hover{
     background-color: #282c34;
-    border: 1px solid #42c3ff;
+    border: 2px solid #42c3ff;
+    box-shadow: 0 0 12px #8cd1ff;
     border-radius: 30px;
     padding: 12px 20px;
     color: rgb(78, 255, 187);
@@ -42,9 +43,17 @@ input:focus::-webkit-input-placeholder {
     outline: none;
 }
 
-.submitButton{
+.gradButtonWrapper{
+    padding: 4px;
+}
+
+.gradButtonContainer{
+    padding: 4px;
+}
+
+.gradButton{
     background-color: #282c34;
-    border: 2px solid #bebebe;
+    border: 2px solid #ffffff;
     color: #ffffff;
     padding: 8px 14px 8px 14px;
     text-align: center;
@@ -54,8 +63,26 @@ input:focus::-webkit-input-placeholder {
     border-radius: 20px;
 }
 
-.submitButton:hover {
-    border-color: rgb(111, 255, 106);
+.gradButton:hover {
+    border-color: rgb(73, 228, 255);
     box-shadow: 0 0 12px #baff8c;
-    color: rgb(117, 255, 117);
+    color: rgb(104, 151, 253);
+}
+
+.submitButton{
+    display: inline-block;
+    background-color: #282c34;
+    border: 2px solid #ffffff;
+    padding: 20px 16px 20px 16px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Gruppo', cursive;
+    font-size: 24px;
+    border-radius: 40px;
+}
+
+.submitButton:hover {
+    border-color: rgb(150, 255, 173);
+    box-shadow: 0 0 12px #b8d7ff;
+    color: rgb(251, 251, 255);
 }
