@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/leavebalance/static/js/runtime~main.b41e82a1.js"
   },
   {
-    "revision": "596ba8a51eba176beffd",
-    "url": "/leavebalance/static/js/main.864ef8cf.chunk.js"
+    "revision": "ae616bd660c35ba050ff",
+    "url": "/leavebalance/static/js/main.8cac87b8.chunk.js"
   },
   {
     "revision": "ae0b72b89335021e0997",
     "url": "/leavebalance/static/js/2.4952e05c.chunk.js"
   },
   {
-    "revision": "596ba8a51eba176beffd",
-    "url": "/leavebalance/static/css/main.b90a92de.chunk.css"
+    "revision": "ae616bd660c35ba050ff",
+    "url": "/leavebalance/static/css/main.693cd2da.chunk.css"
   },
   {
-    "revision": "c8cdd6c850a9b41852513a50f5bb5b57",
+    "revision": "a8dd089b8da518511bb873c7c894451b",
     "url": "/leavebalance/index.html"
   }
 ];
